@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INPUTS</title>
+    <h1>PASSENGER INFO</h1>
+</head>
+<body>
+    {{ value }}
+    <br><br>
+    <form action="/process_data" method="POST">
+    <label for="complaints">Choose a Complaint:</label>
+
+<select name="user" id="complaints">
+  <option value="--"></option>
+  <option value="sexual harassment">Sexual Harassment</option>
+  <option value="Robbery">Robbery</option>
+  <option value="alcohal consumption">Alcohal Consumption</option>
+  <option value="smoking">Smoking</option>
+
+</select>
+
+<br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+    <form action="/process_data" method="POST">
+    <label for="complaints">Choose Your Order:</label>
+
+<select name="user" id="food">
+  <option value="--"></option>
+  <option value="breakfast">Breakfast</option>
+  <option value="lunch">Lunch</option>
+  <option value="dinner">Dinner</option>
+  <option value="snacks">Snacks</option>
+
+</select>
+<br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+
+    <form action="/process_data" method="POST">
+    <label for="feedback">Give Feedback:</label>
+
+<select name="user" id="feedback">
+  <option value="--"></option>
+  <option value="good">Good</option>
+  <option value="My review about my experience: average">Average</option>
+  <option value="poor">Poor</option>
+</select>
+<br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
